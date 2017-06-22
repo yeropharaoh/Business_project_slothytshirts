@@ -92,7 +92,7 @@ body {
 	background-color: white;
 	/*position: fixed;*/
 	bottom: 0;
-	position: absolute;
+	position: relative;
 	margin: 0;
 	width:100%;
 	/*left: 0;*/
@@ -155,9 +155,19 @@ body {
 	width: 100%;
 }
 
+#shirt_box #sloth_tshirt1{
+	padding-right: 40px;
+}
+
+#shirt_box #sloth_tshirt2{
+	padding-left: 40px;
+}
+
 #shirt_box {
-	display: block;
-	object-fit: contain; ;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold; 
+	color: black;
 }
 
 
