@@ -219,14 +219,26 @@ body {
 }
 
 /*FEELING BORED PAGE*/
-.memepics img{
+.slothSlides{
 	display: inline;
+	margin: auto;
 	height: 300px;
 	width: 300px;
-
 }
 
+.button_left{
+	color: darkgreen;
+	margin-left: 700px;
+	height: 40px;
+	width: 40px;
+}
 
+.button_right{
+	color: darkgreen;
+	margin-left: 340px;
+	height: 40px;
+	width: 40px;
+}
 
 
 /*CONTACT PAGE*/

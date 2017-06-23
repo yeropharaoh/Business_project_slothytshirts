@@ -26,9 +26,37 @@
 	<!-- contentbox -->
 
 <div class="whitebox">
-	<img src="images/slothgif1.gif">
 	<br>
-	<img src="images/meme1.jpg">												
+	<div class="slidecontainer">
+	<img class="slothSlides" src="images/slothgif1.gif">
+	<br>
+	<img class="slothSlides" src="images/meme1.jpg">	
+	<img class="slothSlides" src="images/slothgif2.gif">
+
+	<button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="button_right" onclick="plusDivs(+1)">&#10095;</button>	
+		</div>
+
+	<script type="text/javascript">
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("slothSlides");
+	    if (n > x.length) {slideIndex = 1} 
+	    if (n < 1) {slideIndex = x.length} ;
+	    for (i = 0; i < x.length; i++) {
+	        x[i].style.display = "none"; 
+	    }
+	    x[slideIndex-1].style.display = "block"; 
+	}
+	</script>
+	<br>
 </div>	
 
 
