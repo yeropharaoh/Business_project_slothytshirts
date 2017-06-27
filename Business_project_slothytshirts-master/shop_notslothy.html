@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+<body>
+
+<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
+
+<!-- Navigation bar -->
+
+<div class="navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="about.html">Our story</a></li>
+			<li><div class="dropdown">
+					<a href="shop_home.html">Shop</a>
+					<div class="dropdown-content">
+					    <a href="shop_slothy.html">If you feel slothy</a>
+					    <a href="shop_notslothy.html">If you don't feel slothy</a>
+					</div>
+			</div></li>
+			<li><a href="feeling_bored.html">Feeling Bored?</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+<br>
+<br>
+	<!-- contentbox -->
+
+<div class="whitebox">
+<br>
+	<ul id="shop_titles">
+		<li><a href="shop_slothy.html">If you feel slothy</a></li>
+		<li><a href="shop_notslothy.html">If you don't feel slothy</a></li>
+		<br>
+		<br>
+	</ul>
+
+<div id="shirt_box" style="width: 100%; display: table;">
+		<div style="display: table-row">
+			<div id="notsloth_tshirt1" class="container_img" style="display: inline-block;">
+			<img id="shirt3Img" src="images/other_tshirt1.jpg" alt="BUY">
+			<p>Not so slothy Kim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€1.67</p>
+		</div>
+		<div id="notsloth_tshirt2" class="container_img" style="display: inline-block;">
+			<img id="shirt4Img" src="images/other_tshirt2.jpg" alt="BUY">
+			<p>Yes we are!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€600.33</p>
+			</div>
+		</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+</div>
+</div>
+<br>													
+</div>	
+<br>
+<br>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#sloth_tshirt1').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+	
+	$('#sloth_tshirt2').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+
+	$('#notsloth_tshirt1').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+	
+	$('#notsloth_tshirt2').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+
+// <!-- // Get the modal -->
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('shirt3Img');
+var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// <!-- // Get the <span> element that closes the modal -->
+var span = document.getElementsByClassName("close")[0];
+
+// <!-- // When the user clicks on <span> (x), close the modal -->
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+});
+
+</script>
+
+<!-- // -->
+
+
+
+<!-- footer -->
+
+<div class="footer">
+		<h2>Sustainable t-shirts made with <img id="sloth_icon" src="images/sloth_icon.png"> in Kattegat</h2>
+			<a href="https://www.facebook.com/slothdelarebel/?fref=ts" target="_blank">
+				<img class="icon" src="images/facebook_icon.png"/>
+			</a>
+			<a href="https://soundcloud.com/slothcloud" target="_blank">
+				<img class="icon" src="images/soundcloud_icon.png"/>
+			</a>
+			<a href="https://www.instagram.com/instasloths/" target="_blank">
+				<img class="icon" src="images/instagram_icon.png"/>
+			</a>
+		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+
+		$(".navigation ul li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});	
+
+		$("#shop_titles li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});
+});
+
+</script>
+	
+</body>
+</html>

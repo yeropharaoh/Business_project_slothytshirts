@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+<body>
+
+<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
+
+<!-- Navigation bar -->
+
+<div class="navigation">
+		<ul>
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="about.html">Our story</a></li>
+			<li><div class="dropdown">
+					<a href="shop_home.html">Shop</a>
+					<div class="dropdown-content">
+					    <a href="shop_slothy.html">If you feel slothy</a>
+					    <a href="shop_notslothy.html">If you don't feel slothy</a>
+					</div>
+			</div></li>
+			<li><a href="feeling_bored.html">Feeling Bored?</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+<br>
+<br>
+	<!-- contentbox -->
+
+<div class="whitebox">
+<br>
+	<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Quick Contact</h3>
+    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+  
+</div>													
+</div>
+
+<br>
+<br>	
+
+<!-- footer -->
+
+<div class="footer bored">
+		<br>
+		<h2>Sustainable t-shirts made with <img id="sloth_icon" src="images/sloth_icon.png"> in Kattegat</h2>
+			<a href="https://www.facebook.com/slothdelarebel/?fref=ts" target="_blank">
+				<img class="icon" id="fb" src="images/facebook_icon.png"/>
+			</a>
+			<a href="https://soundcloud.com/slothcloud" target="_blank">
+				<img class="icon" id="scloud" src="images/soundcloud_icon.png"/>
+			</a>
+			<a href="https://www.instagram.com/instasloths/" target="_blank">
+				<img class="icon" id="insta" src="images/instagram_icon.png"/>
+			</a>
+		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+
+		$(".navigation ul li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});	
+});
+
+</script>
+	
+</body>
+</html>

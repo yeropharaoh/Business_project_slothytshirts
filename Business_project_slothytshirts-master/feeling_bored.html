@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+<body>
+
+<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
+
+
+<!-- Navigation bar -->
+
+<div class="navigation">
+		<ul>
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="about.html">Our story</a></li>
+			<li><div class="dropdown">
+					<a href="shop_home.html">Shop</a>
+					<div class="dropdown-content">
+					    <a href="shop_slothy.html">If you feel slothy</a>
+					    <a href="shop_notslothy.html">If you don't feel slothy</a>
+					</div>
+				</div>
+			<li><a href="#">Feeling Bored?</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+<br>
+<br>
+	<!-- contentbox -->
+
+<div class="whitebox">
+	<br>
+	<div class="slidecontainer">
+	<div class="sarcasticheader"><p>100% related to our mission</p></div>
+
+	<button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="button_right" onclick="plusDivs(+1)">&#10095;</button>
+
+	<div class="pics">
+	<img class="slothSlides" src="images/slothgif1.gif">
+	<img class="slothSlides" src="images/meme1.jpg">	
+	<img class="slothSlides" src="images/slothgif2.gif">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("slothSlides");
+	    if (n > x.length) {slideIndex = 1} 
+	    if (n < 1) {slideIndex = x.length} ;
+	    for (i = 0; i < x.length; i++) {
+	        x[i].style.display = "none"; 
+	    }
+	    x[slideIndex-1].style.display = "block"; 
+	}
+	</script>
+
+	<br>
+	<br>
+</div>
+
+<br>	
+<br>
+
+
+<!-- footer -->
+
+<div class="footer bored">
+		<br>
+		<h2>Sustainable t-shirts made with <img id="sloth_icon" src="images/sloth_icon.png"> in Kattegat</h2>
+			<a href="https://www.facebook.com/slothdelarebel/?fref=ts" target="_blank">
+				<img class="icon" id="fb" src="images/facebook_icon.png"/>
+			</a>
+			<a href="https://soundcloud.com/slothcloud" target="_blank">
+				<img class="icon" id="scloud" src="images/soundcloud_icon.png"/>
+			</a>
+			<a href="https://www.instagram.com/instasloths/" target="_blank">
+				<img class="icon" id="insta" src="images/instagram_icon.png"/>
+			</a>
+		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+
+		$(".navigation ul li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});	
+});
+
+</script>
+	
+</body>
+</html>
