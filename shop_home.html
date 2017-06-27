@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<img id="logo" src="images/logo.png">
+<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
 
 <!-- Navigation bar -->
 
@@ -44,17 +44,24 @@
 <div id="shirt_box" style="width: 100%; display: table;">
 		<div style="display: table-row">
 			<div id="sloth_tshirt1" class="container_img" style="display: inline-block;">
-			<img src="images/sloth_tshirt1.jpg">
+			<img id="shirt1Img" src="images/sloth_tshirt1.jpg" alt="BUY">
 			<p>Very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.43</p>
 		</div>
 		<div id="sloth_tshirt2" class="container_img" style="display: inline-block;">
-			<img src="images/sloth_tshirt2.jpg" >
+			<img id="shirt2Img" src="images/sloth_tshirt2.jpg" alt="BUY">
 			<p>Another very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.44</p>
 			</div>
 		</div>
 <br>
 <br>
 		<div style="display: table-row">
+			<div id="notsloth_tshirt1" class="container_img" style="display: inline-block;">
+			<img id="shirt3Img" src="images/other_tshirt1.jpg" alt="BUY">
+      <p>Not so slothy Kim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€1.67</p>
+  </div>
+		<div id="notsloth_tshirt2" class="container_img" style="display: inline-block;">
+			<img id="shirt4Img" src="images/other_tshirt2.jpg" alt="BUY">
+    <p>Yes we are!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€600.33</p>
 			<div id="sloth_tshirt1" class="container_img" style="display: inline-block;">
 			<img src="images/other_tshirt1.jpg">
 			<p>Not so slothy Kim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€1.67</p>
@@ -64,25 +71,91 @@
 			<p>Yes we are!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€600.33</p>
 			</div>
 		</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+</div>
 </div>
 <br>													
 </div>	
+<br>
+<br>
 
-<br>
-<br>
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#sloth_tshirt1').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+	
+	$('#sloth_tshirt2').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+
+	$('#notsloth_tshirt1').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+	
+	$('#notsloth_tshirt2').hover(function(){
+    $(this).css({width:"25%",height:"25%"});
+	},function(){
+	    $(this).css({width:"400px",height:"400px"});   
+	});
+
+
+var modal = document.getElementById('myModal');
+
+var img = document.getElementById('shirt1Img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+});
+
+</script>
+
+<!-- // -->
+
 
 <!-- footer -->
 
-<div class="footer">
+<div class="footer bored">
+		<br>
 		<h2>Sustainable t-shirts made with <img id="sloth_icon" src="images/sloth_icon.png"> in Kattegat</h2>
 			<a href="https://www.facebook.com/slothdelarebel/?fref=ts" target="_blank">
-				<img class="icon" src="images/facebook_icon.png"/>
+				<img class="icon" id="fb" src="images/facebook_icon.png"/>
 			</a>
 			<a href="https://soundcloud.com/slothcloud" target="_blank">
-				<img class="icon" src="images/soundcloud_icon.png"/>
+				<img class="icon" id="scloud" src="images/soundcloud_icon.png"/>
 			</a>
 			<a href="https://www.instagram.com/instasloths/" target="_blank">
-				<img class="icon" src="images/instagram_icon.png"/>
+				<img class="icon" id="insta" src="images/instagram_icon.png"/>
 			</a>
 		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
 </div>
@@ -111,3 +184,4 @@
 	
 </body>
 </html>
+
