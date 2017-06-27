@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 </head>
 <body>
 
@@ -16,17 +17,23 @@
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="about.html">Our story</a></li>
-			<li><a href="shop_home.html">Shop</a></li>
+			<li><div class="dropdown">
+					<a href="shop_home.html">Shop</a>
+					<div class="dropdown-content">
+					    <a href="shop_slothy.html">If you feel slothy</a>
+					    <a href="shop_notslothy.html">If you don't feel slothy</a>
+					</div>
+			</div></li>
 			<li><a href="feeling_bored.html">Feeling Bored?</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-	</div>
-<br>
-<br>
+</div>
 	<!-- contentbox -->
 
 <div id="text-home">
-	<p>"We believe that more people should wear sustainable slothy T-shirts"
+	<p>
+	"We believe that more people should wear sustainable slothy T-shirts"
+	<br>
 	</p>													
 </div>	
 
@@ -46,6 +53,21 @@
 			</a>
 		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
 </div>
-	
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+
+		$(".navigation ul li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});	
+});
+
+</script>
 </body>
 </html>

@@ -14,9 +14,15 @@
 
 <div class="navigation">
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="homepage.html">Home</a></li>
 			<li><a href="about.html">Our story</a></li>
-			<li><a href="shop_home.html">Shop</a></li>
+			<li><div class="dropdown">
+					<a href="shop_home.html">Shop</a>
+					<div class="dropdown-content">
+					    <a href="shop_slothy.html">If you feel slothy</a>
+					    <a href="shop_notslothy.html">If you don't feel slothy</a>
+					</div>
+			</div></li>
 			<li><a href="feeling_bored.html">Feeling Bored?</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
@@ -26,9 +32,33 @@
 	<!-- contentbox -->
 
 <div class="whitebox">
-	<p>this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit this is shit 
-	</p>													
+<br>
+	<ul id="shop_titles">
+		<li><a href="shop_slothy.html">If you feel slothy</a></li>
+		<li><a href="shop_notslothy.html">If you don't feel slothy</a></li>
+		<br>
+		<br>
+	</ul>
+
+
+<div id="shirt_box" style="width: 100%; display: table;">
+		<div style="display: table-row">
+			<div id="sloth_tshirt1" class="container_img" style="display: inline-block;">
+			<img src="images/sloth_tshirt1.jpg">
+			<p>Very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.43</p>
+		</div>
+		<div id="sloth_tshirt2" class="container_img" style="display: inline-block;">
+			<img src="images/sloth_tshirt2.jpg" >
+			<p>Another very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.44</p>
+			</div>
+		</div>
+		
+</div>
+<br>													
 </div>	
+
+<br>
+<br>
 
 
 <!-- footer -->
@@ -46,6 +76,27 @@
 			</a>
 		<h3>Copyright © 1899 Slothy T-shirts. All rights reserved</h3>
 </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+
+		$(".navigation ul li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});	
+
+		$("#shop_titles li a").hover(function() {
+		$(this).css("color", "rgb(226, 219, 190)");
+		}, 
+		function(){
+		$(this).css("color", "black");
+		});
+});
+</script>
 	
 </body>
 </html>
