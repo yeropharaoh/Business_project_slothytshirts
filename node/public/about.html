@@ -8,23 +8,22 @@
 </head>
 <body>
 
-<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
-
+<a href="index.html"><img id="logo" src="images/logo.png"></a>
 
 <!-- Navigation bar -->
 
 <div class="navigation">
 		<ul>
-			<li><a href="homepage.html">Home</a></li>
-			<li><a href="about.html">Our story</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Our story</a></li>
 			<li><div class="dropdown">
 					<a href="shop_home.html">Shop</a>
 					<div class="dropdown-content">
 					    <a href="shop_slothy.html">If you feel slothy</a>
 					    <a href="shop_notslothy.html">If you don't feel slothy</a>
 					</div>
-				</div>
-			<li><a href="#">Feeling Bored?</a></li>
+			</div></li>
+			<li><a href="feeling_bored.html">Feeling Bored?</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
@@ -32,48 +31,24 @@
 <br>
 	<!-- contentbox -->
 
+
+
 <div class="whitebox">
-	<br>
-	<div class="slidecontainer">
-	<div class="sarcasticheader"><p>100% related to our mission</p></div>
+	<div id="about">
+			<div style="display: inline-block;" class="container_about" id="pic_about">
+			<img src="images/about_pic.png" class="container_about_size">
+			</div>
 
-	<button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
-	<button class="button_right" onclick="plusDivs(+1)">&#10095;</button>
-
-	<div class="pics">
-	<img class="slothSlides" src="images/slothgif1.gif">
-	<img class="slothSlides" src="images/meme1.jpg">	
-	<img class="slothSlides" src="images/slothgif2.gif">
-	</div>
-	</div>
-
-	<script type="text/javascript">
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-	    showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-	    var i;
-	    var x = document.getElementsByClassName("slothSlides");
-	    if (n > x.length) {slideIndex = 1} 
-	    if (n < 1) {slideIndex = x.length} ;
-	    for (i = 0; i < x.length; i++) {
-	        x[i].style.display = "none"; 
-	    }
-	    x[slideIndex-1].style.display = "block"; 
-	}
-	</script>
-
-	<br>
-	<br>
+			<div style="display: inline-block;" class="container_about" id="text_about">
+			 <p>
+				 Hi Slothy people out there! We are Yero Pharaoh and Sheila de Leeuw. We met at the annual Sloth convention where we shared our love for the sloth:  their beauty, their elegance, their laziness and the positive vibes they spread everywhere. We find sloths truly inspiring. We strongly believe that by adding some more slothiness in our day to day lives we will make people feel more slothy, happy, lazy and positive! Additionally, we only use 100% sloth materials for our slothy t-shirts. So you will not only feel very slothy, lazy and happy but also super sustainable!
+				<br>
+				<br>
+			 </p>
+			</div>			
+	</div>	
 </div>
-
-<br>	
 <br>
-
 
 <!-- footer -->
 

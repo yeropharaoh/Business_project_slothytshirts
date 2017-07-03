@@ -8,13 +8,13 @@
 </head>
 <body>
 
-<a href="homepage.html"><img id="logo" src="images/logo.png"></a>
+<a href="index.html"><img id="logo" src="images/logo.png"></a>
 
 <!-- Navigation bar -->
 
 <div class="navigation">
 		<ul>
-			<li><a href="homepage.html">Home</a></li>
+			<li><a href="#">Home</a></li>
 			<li><a href="about.html">Our story</a></li>
 			<li><div class="dropdown">
 					<a href="shop_home.html">Shop</a>
@@ -40,18 +40,19 @@
 		<br>
 	</ul>
 
-
 <div id="shirt_box" style="width: 100%; display: table;">
 		<div style="display: table-row">
-			<div id="sloth_tshirt1" class="container_img" style="display: inline-block;">
-			<img id="shirt1Img" src="images/sloth_tshirt1.jpg" alt="BUY">
-			<p>Very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.43</p>
+			<div id="notsloth_tshirt1" class="container_img" style="display: inline-block;">
+			<img id="shirt3Img" src="images/other_tshirt1.jpg" alt="BUY">
+			<p>Not so slothy Kim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€1.67</p>
 		</div>
-		<div id="sloth_tshirt2" class="container_img" style="display: inline-block;">
-			<img id="shirt2Img" src="images/sloth_tshirt2.jpg" alt="BUY">
-			<p>Another very slothy T-shirt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€100.44</p>
+		<div id="notsloth_tshirt2" class="container_img" style="display: inline-block;">
+			<img id="shirt4Img" src="images/other_tshirt2.jpg" alt="BUY">
+			<p>Yes we are!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€600.33</p>
 			</div>
 		</div>
+
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -101,9 +102,9 @@ $(document).ready(function(){
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('shirt1Img');
+var img = document.getElementById('shirt3Img');
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+// var captionText = document.getElementById("caption");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -125,13 +126,6 @@ span.onclick = function() {
 
 <!-- // -->
 
-		
-</div>
-<br>													
-</div>	
-
-<br>
-<br>
 
 
 <!-- footer -->
@@ -169,6 +163,7 @@ span.onclick = function() {
 		$(this).css("color", "black");
 		});
 });
+
 </script>
 	
 </body>

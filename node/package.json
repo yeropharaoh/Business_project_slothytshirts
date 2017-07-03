@@ -1,0 +1,23 @@
+{
+  "name": "bizsite_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeropharaoh/Business_project_slothytshirts.git"
+  },
+  "author": "Yero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeropharaoh/Business_project_slothytshirts/issues"
+  },
+  "homepage": "https://github.com/yeropharaoh/Business_project_slothytshirts#readme"
+}
